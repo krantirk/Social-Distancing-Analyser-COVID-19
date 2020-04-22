@@ -6,8 +6,11 @@ import numpy as np
 confid = 0.5
 thresh = 0.5
 
+import os
+import sys
+os.getcwd()
+#os.chdir("C:/Users/RK/Social-Distancing-Analyser-COVID-19/")
 vid_path = "./videos/video.mp4"
-
 
 # Calibration needed for each video
 
@@ -31,8 +34,8 @@ LABELS = open(labelsPath).read().strip().split("\n")
 
 np.random.seed(42)
 
-weightsPath = "./yolov3.weights"
-configPath = "./yolov3.cfg"
+weightsPath = "./yolov3-tiny.weights"
+configPath = "./yolov3-tiny.cfg"
 
 ###### use this for faster processing (caution: slighly lower accuracy) ###########
 
